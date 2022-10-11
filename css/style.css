@@ -65,7 +65,7 @@ p {
 .buttonA {
     padding: 24px 68px;
     height: 68px;
-    background: #2A4F4C;
+    background-color: #2A4F4C;
     border: none;
     color: white;
     font-family: 'Figtree';
@@ -77,12 +77,19 @@ p {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonA:hover{
+    background-color: #86A9A3;
+    box-shadow: 2px 5px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .buttonB {
     padding: 24px 68px;
     height: 68px;
-    background: white;
+    background-color: white;
     border: 5px solid #2A4F4C;
     color: #2A4F4C;
     font-family: 'Figtree';
@@ -94,6 +101,14 @@ p {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonB:hover{
+    background-color: #86A9A3;
+    color: white;
+    box-shadow: 2px 5px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 768px)
@@ -136,6 +151,16 @@ nav {
 .navLogo {
     width: 42px;
     text-align: center;
+    animation: spin 5s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 .navItem {
@@ -182,9 +207,11 @@ a {
     text-align: center;
 }
 
+
 .greeting {
-    font-size: 24px;
+    font-size: 21px;
 }
+
 .mini-kawaDiscription {
     font-size: 16px;
 }
@@ -228,12 +255,24 @@ a {
 
 .projectPic img {
     width: 100%;
+    transition: 3s;
 }
+
+.projectPic{
+    
+}
+.projectPic:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    animation-timing-function:
+   
+}
+
 .projectGroup {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 32px;
-    margin-bottom: 64px;;
+    margin-bottom: 64px;
 }
 
 .seeMore {
