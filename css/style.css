@@ -1,0 +1,352 @@
+/* font settings */
+h1 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+/* button settings */
+.buttonA {
+    padding: 24px 68px;
+    height: 68px;
+    background: #2A4F4C;
+    border: none;
+    color: white;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttonB {
+    padding: 24px 68px;
+    height: 68px;
+    background: white;
+    border: 5px solid #2A4F4C;
+    color: #2A4F4C;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    line-height: 0.8;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .buttonA {
+        padding: 21px 48px;
+        height: 60px;
+        font-size: 15px;
+    }
+    
+    .buttonB {
+        padding: 21px 48px;
+        height: 60px;
+        font-size: 15px;
+    }
+}
+
+/* header nav section*/
+nav {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.headerNav {
+    padding-left: 5%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #161616;
+}
+
+.navLogo {
+    width: 42px;
+    text-align: center;
+}
+
+.navItem {
+    padding-right: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+}
+
+/* hero section */
+.hero {
+    padding-top: 2%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+}
+
+.heroText {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 115px;
+    letter-spacing: 0.05em;
+}
+
+.heroTagline {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin-top: -68px;
+}
+
+
+/* self introduction section */
+.selfIntroduction {
+    background-color: #E8D7C8;
+    padding: 10%;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 24px;
+}
+.mini-kawaDiscription {
+    font-size: 16px;
+}
+
+/* project section 
+@media only screen and (min-width: 769px) {
+
+    #project {
+        padding: 64px;
+    }
+
+    .projectGroup {
+        display: flex;
+        flex-direction: row;
+        padding: 10%;
+        justify-content: space-between;
+    }
+
+    .projectCard{
+        margin-right: 68px;
+    }
+
+    .projectPic img {
+        width: 489px;
+    }
+
+    .seeMore {
+        display: flex;
+        margin: auto;
+    }
+}
+*/
+
+/* grid layout trial*/
+@media only screen and (min-width: 769px) {
+#project {
+    padding: 5%;
+    padding-top: 96px;
+    
+}
+
+.projectPic img {
+    width: 100%;
+}
+.projectGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    margin-bottom: 64px;;
+}
+
+.seeMore {
+    display: flex;
+    margin: auto;
+    margin-bottom: 64px;
+}
+}
+/* project section for mobile */
+@media only screen and (max-width: 768px) {
+
+    #project {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .projectGroup {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        align-items: flex-start;
+    }
+
+    .projectCard{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+    }
+
+    .projectPic img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .seeMore {
+        display: flex;
+        margin: auto;
+    }
+}
+
+/* get in touch section */
+@media only screen and (min-width: 769px) {
+
+    #getInTouch {
+        text-align: center;
+        padding: 10%;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-color: #E8D7C8;
+    }
+
+    .contactResume {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        height: 68px;
+    }
+}
+
+/* get in touch section for mobile*/
+@media only screen and (max-width: 768px)
+{
+    #getInTouch {
+        text-align: center;
+        padding: 10%;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        background-color: #E8D7C8;
+    }
+    
+    .contactResume {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+/* footer section */
+
+#footerNav {
+    padding-left: 5%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #161616;
+}
+
+/* footer section for mobile */
+@media only screen and (max-width: 768px)
+{
+#footerNav {
+    padding-left: 5%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 100%; 
+    }
+}
