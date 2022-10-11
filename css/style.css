@@ -258,14 +258,9 @@ a {
     transition: 3s;
 }
 
-.projectPic{
-    
-}
 .projectPic:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    animation-timing-function:
-   
 }
 
 .projectGroup {
