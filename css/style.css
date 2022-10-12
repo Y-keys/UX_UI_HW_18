@@ -394,27 +394,38 @@ a {
     padding-top: 2%;
     padding-bottom: 20%;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
+@media only screen and (min-width: 769px) {
 .workImg {
     max-width: 85%;
+}
+
+.mobilePic {
+    display: none;
 }
 
 #workProject1 {
     padding-top: 64px;
     display: grid;
     width: 100%;
-    height: 600px;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "imgContainer projectTitle"
-    "imgContainer projectDescriptions"
-    "imgContainer projectDescriptions";
+    "project1 projectTitle"
+    "project1 projectDescriptions"
+    "project1 projectDescriptions";
 }
 
-.imgContainer {
-    grid-area: imgContainer;
+#project1 {
+    grid-area: project1;
+    background-image: url(../images/Playroom_Mockup.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 40px;
 }
 
 .projectTitle {
@@ -426,27 +437,65 @@ a {
 }
 
 #workProject2 {
+    padding-top: 64px;
     display: grid;
     width: 100%;
-    height: 600px;
+    height: 100%x;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "projectTitle imgContainer "
-    "projectDescriptions imgContainer"
-    "projectDescriptions imgContainer";
+    "projectTitle project2 "
+    "projectDescriptions project2"
+    "projectDescriptions project2";
+}
+
+#project2 {
+    grid-area: project2;
+    background-image: url(../images/Playroom_Mockup.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 40px;
 }
 
 #workProject3 {
+    padding-top: 64px;
     display: grid;
     width: 100%;
-    height: 600px;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "imgContainer projectTitle"
-    "imgContainer projectDescriptions"
-    "imgContainer projectDescriptions";
+    "project3 projectTitle"
+    "project3 projectDescriptions"
+    "project3 projectDescriptions";
+}
+
+#project3 {
+    grid-area: project3;
+    background-image: url(../images/Playroom_Mockup.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+}
+}
+
+@media only screen and (max-width:768px) {
+#webAppDesign{
+    
+    }
+
+.mobilePic {
+    max-width: 100%;
+}
+
+.workProject {
+    padding-top: 40px;
+    display: flex; 
+    flex-direction: column; 
+}
+ 
 }
 
 /* Mini-Kawa Gallery Secion */
