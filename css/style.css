@@ -152,6 +152,7 @@ nav {
     width: 42px;
     text-align: center;
     animation: spin 5s;
+    transform-origin: center center;
 }
 
 @keyframes spin {
