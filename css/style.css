@@ -482,9 +482,6 @@ a {
 }
 
 @media only screen and (max-width:768px) {
-#webAppDesign{
-    
-    }
 
 .mobilePic {
     max-width: 100%;
@@ -495,7 +492,6 @@ a {
     display: flex; 
     flex-direction: column; 
 }
- 
 }
 
 /* Mini-Kawa Gallery Secion */
