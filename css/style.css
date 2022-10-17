@@ -78,6 +78,8 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    min-width: max-content
 }
 
 .buttonA:hover{
@@ -102,6 +104,8 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    min-width: max-content
 }
 
 .buttonB:hover{
@@ -117,6 +121,8 @@ p {
         padding: 21px 48px;
         height: 60px;
         font-size: 15px;
+        white-space: nowrap;
+        min-width: max-content
     }
     
     .buttonB {
