@@ -178,7 +178,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: #161616;
+    color: inherit;
 }
 
 /* hero section */
@@ -514,12 +514,11 @@ a:hover {
 }
 
 /* Mini-Kawa Gallery Secion */
-/* #miniKawaGallery {
-    padding-top: 2%;
-    padding-bottom: 20%;
+#miniKawaGallery {
+    padding-bottom: 5%;
     padding-left: 5%;
+    padding-right: 5%;
 }
-*/
 
 .slide-container {
     width: 100%;
