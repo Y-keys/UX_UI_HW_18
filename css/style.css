@@ -400,6 +400,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    row-gap: 15px;
     width: 100%; 
     font-size: 12px;
     }
